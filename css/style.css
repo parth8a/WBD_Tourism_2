@@ -95,6 +95,10 @@ header a:hover{
     font-size: 20px;
 }
 
+#second_header{
+    margin-left: 2.5%;
+}
+
 #second_header .highlight{
     color: goldenrod;
     font-family: Monotype Corsiva, cursive;

@@ -2,7 +2,7 @@ body{
     font: 15px/1.5 Book Antiqua, Times, serif;
     padding: 0;
     margin: 0;
-    background-color: #ffffff/*#fffab3*/ /*#e8c15f*/;
+    background-color: #fffeea /*#ffffff*/ /*#fffab3*/ /*#e8c15f*/;
 }
 /*Global*/
 .container{
@@ -20,7 +20,7 @@ ul{
 header{
     background: #193300;
     color: #ffffff;
-    padding-top: 30px;
+    padding-top: 20px;
     min-height: 70px;
     border-bottom: goldenrod 3px solid;
 }
@@ -57,6 +57,7 @@ header .highlight{
     font-style: italic;
     color:goldenrod;
     font-weight: normal;
+    text-shadow:1px 1px 3px goldenrod;
 }
 header .current a{
     color:goldenrod;
@@ -67,7 +68,58 @@ header a:hover{
     color:goldenrod;
     font-weight:300;
     font-size: 17px;
+    text-shadow:1px 1px 1px goldenrod;
+    transition-duration: 0.3s;
 }
+
+/* The Dropdown */
+.dropdown {
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    color:goldenrod;
+    font-weight:300;
+    font-size: 17px;
+    text-shadow:1px 1px 2px goldenrod;
+    transition-duration: 0.4s;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #224600 /*#f9f9f9*/;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #306400 /*#ddd*/;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
 /*Showcase*/
 #showcase{
@@ -77,42 +129,137 @@ header a:hover{
     background-attachment: fixed;
     background-position: 50% 5%;
     text-align: center;
-    color: #193300/*#193300*/;
     border-bottom: goldenrod 3px solid;
 }
 
 #showcase h1{
     margin-top: 100px;
     margin-bottom: 10px;
-    font-size: 55px
+    font-size: 55px;
+    color: #193300;
 }
 
 #showcase .highlight{
-    color: rgba(255, 183, 0, 0.945)
+    color: rgba(255, 183, 0, 0.945);
+    text-shadow: 5px 4px 5px #193300, 5px 4px 5px goldenrod;
 }
 
 #showcase p{
     font-size: 20px;
 }
 
+/* Heading and introduction */
+
+#introduction {
+    padding: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 25px;
+    line-height: 1.7;
+}
+
+#introduction #ppl_in_the_streets{
+    width: 350px;
+    float: right;
+    margin: -20px 0px 0px 50px;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#heading{
+    text-align: center;
+    padding: 15px;
+    font-size: 25px;
+}
+
+#heading .highlight{
+    color: goldenrod;
+    font-family: Monotype Corsiva, cursive;
+    font-size: 45px;
+    font-style: italic;
+    text-shadow:1.5px 1.5px 2px #193300;
+}
+
+/* Boxes */
+
+#boxes{
+    margin-top: 20px;
+    min-height: 600px;
+    background: url('../images/red_fort_image.png') no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    border-top: goldenrod 3px solid;
+    border-bottom: goldenrod 3px solid;   
+}
+
+#boxes .boxintro{
+    padding: 30px;
+    font-size: 25px;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    height: 375px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 7.5px;
+}
+
+#boxes .box img{
+    width: 150px;
+}
+
+#boxes .box:hover h3{
+    font-size: 25px;
+    text-shadow:1.5px 1.5px 2px goldenrod;
+    transition-duration: 0.5s;
+}
+
+#boxes .box:hover img{
+    width: 160px;
+    transition-duration: 0.5s;
+}
+
+#boxes .box h3{
+    font-size: 22px;
+    color: #193300;
+}
+
+#boxes .box p{
+    font-size: 18px;
+    color: black;
+}
+
+
+/* Body */
+
 #body{
     padding: 30px;
     font-size: 18px;
 }
 
-#body .highlight{
-    color: goldenrod;
-    font-family: Monotype Corsiva, cursive;
-    font-size: 30px;
-    font-style: italic;
-}
+/*Footer*/
 
 footer{
     padding: 20px;
+    padding-bottom: 40px;
     margin-top: 20px;
     color:goldenrod;
     background-color: #193300;
     text-align: center;
+}
+
+footer #contactus{
+    float:left;
+    text-align: left;
+}
+
+footer #copyright{
+    float: center;
 }
 
 footer #last_updated{

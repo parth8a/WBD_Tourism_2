@@ -16,6 +16,18 @@ ul{
     padding: 0;
 }
 
+.button_1{
+    height: 38px;
+    background: goldenrod;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+}
+
+.button_1:hover{
+    background: rgb(255, 193, 37)
+}
 /* Header*/
 header{
     background: #193300;
@@ -148,6 +160,30 @@ header a:hover{
     font-size: 20px;
 }
 
+/* Newsletter */
+#newsletter{
+    padding: 15px;
+    color: white;
+    background: #193300;
+    border-bottom: goldenrod 3px solid;
+}
+
+#newsletter h1{
+    float: left;
+    font-size: 25px;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type='email']{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
 /* Heading and introduction */
 
 #introduction {
@@ -158,13 +194,26 @@ header a:hover{
     line-height: 1.7;
 }
 
-#introduction #ppl_in_the_streets{
+#introduction .slideshow_para{
+    margin-right: 400px;
+}
+
+#introduction .slideshow{
+    position: absolute;
+    right: 50px;
     width: 350px;
     float: right;
-    margin: -20px 0px 0px 50px;
-
+    margin: 50px 0px 0px 50px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
+/* 
+#introduction #streets_image{
+    z-index: 2;
+}
+
+#introduction #architecture_image{
+    z-index: 1;
+} */
 
 #heading{
     text-align: center;

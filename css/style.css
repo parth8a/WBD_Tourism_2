@@ -87,9 +87,9 @@ header a:hover{
 /* The Dropdown */
 .dropdown {
     overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
+}
+
+.dropdown .dropbtn {
     font-size: 16px;  
     border: none;
     outline: none;
@@ -97,41 +97,41 @@ header a:hover{
     background-color: inherit;
     font-family: inherit;
     margin: 0;
-  }
+}
   
-  .navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn {
     color:goldenrod;
     font-weight:300;
     font-size: 17px;
     text-shadow:1px 1px 2px goldenrod;
     transition-duration: 0.4s;
-  }
+}
   
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #224600 /*#f9f9f9*/;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
+}
   
-  .dropdown-content a {
+.dropdown-content a {
     float: none;
     color: whitesmoke;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-  }
+}
   
-  .dropdown-content a:hover {
+.dropdown-content a:hover {
     background-color: #306400 /*#ddd*/;
-  }
+}
   
-  .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
     display: block;
-  }
+}
 
 /*Showcase*/
 #showcase{
@@ -194,8 +194,8 @@ header a:hover{
     line-height: 1.7;
 }
 
-#introduction .slideshow_para{
-    margin-right: 400px;
+#introduction #slideshow_para{
+    margin-right: 30%;
 }
 
 #introduction .slideshow{
@@ -247,19 +247,35 @@ header a:hover{
     font-size: 25px;
 }
 
+#boxes .container{
+    width: 90%;
+    margin-bottom: 17px;
+}
+
 #boxes .box{
     float: left;
     text-align: center;
     width: 30%;
-    height: 375px;
+    height: 380px;
     padding: 10px;
     border: 2px solid black;
     border-radius: 25px;
-    margin: 7.5px;
+    margin: 0.5%;
+    margin-bottom: 2%;
 }
 
 #boxes .box img{
     width: 150px;
+}
+
+#boxes .box h3{
+    font-size: 22px;
+    color: #193300;
+}
+
+#boxes .box p{
+    font-size: 18px;
+    color: black;
 }
 
 #boxes .box:hover{
@@ -278,17 +294,6 @@ header a:hover{
     transition-duration: 0.5s;
 }
 
-#boxes .box h3{
-    font-size: 22px;
-    color: #193300;
-}
-
-#boxes .box p{
-    font-size: 18px;
-    color: black;
-}
-
-
 /* Body */
 
 #body{
@@ -302,7 +307,7 @@ header a:hover{
    padding: 30px
 }
 
-#map {
+#map_and_header iframe{
     height: 400px;
     width: 90%;
     border: 5px solid #193300;
@@ -338,3 +343,70 @@ footer #last_updated{
     margin-right: auto;
     width: 50%;
   }
+
+/* Media Queries */
+/* @media(max-width:1300px){
+    #boxes .box{
+        float: none;
+        width: 30%;
+        text-align: ;
+    }
+} */
+
+@media(max-width:1158px){
+    #boxes .box{
+        float: none;
+        width: 75%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #boxes .box p, 
+    #boxes .box h3{
+        text-decoration: none;
+    }
+}
+
+@media(max-width: 768px){
+    header #branding, 
+    header nav, 
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #introduction #heading,
+    #introduction #slideshow_para{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    header{
+        padding-bottom: 15px;
+    }
+
+    #newsletter button{
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"]{
+        width: 100%;
+        margin-bottom: 7px;
+    }
+
+    #introduction .slideshow{
+        display: none;
+    }
+}
+
+@media(max-width:384px){
+    #boxes .box{
+        float: none;
+        width: 75%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        height: 500px;
+    }
+}
